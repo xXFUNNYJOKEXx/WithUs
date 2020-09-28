@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System.Diagnostics;
-using static System.Diagnostics.Debug;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -30,7 +29,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Connected to master server");
+        System.Diagnostics.Debug.Print("Connected to master server");
     }
 
     public void CreateRoom(string roomName)
